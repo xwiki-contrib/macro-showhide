@@ -38,7 +38,7 @@
   <comment/>
   <minorEdit>false</minorEdit>
   <syntaxId>xwiki/2.0</syntaxId>
-  <hidden>false</hidden>
+  <hidden>true</hidden>
   <content>Wiki macros implementation for simple show/hide of a content with some animations.
 This version 2.0 is HTML compatible with the old version, so that existing project could continue styling 
 with the same kind of CSS rules. However, it is now based on jQuery, and need requireJS, so it requires
