@@ -449,7 +449,7 @@ Here is some hidden content that can become visible
       <contentDescription/>
     </property>
     <property>
-      <contentJavaType>Wiki</contentJavaType>
+      <contentJavaType/>
     </property>
     <property>
       <contentType>Optional</contentType>
