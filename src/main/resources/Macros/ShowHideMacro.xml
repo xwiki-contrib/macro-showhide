@@ -328,8 +328,11 @@ Here is some hidden content that can become visible
     </class>
     <property>
       <code>{{velocity}}
-$xwiki.jsx.use("Macros.ShowHideMacro")
-#set($mparams = $xcontext.macro.params)
+#set($discard = $xwiki.jsx.use("Macros.ShowHideMacro"))
+#set($mparams = $wikimacro.parameters)
+#if(!$mparams)
+  #set($mparams = $xcontext.macro.params)
+#end
 #if($mparams.id)
   #set($id = $util.convertToAlphaNumeric($mparams.id))
 #end
@@ -354,7 +357,7 @@ $xwiki.jsx.use("Macros.ShowHideMacro")
 (% class="showhidecontent" #if($id &amp;&amp; $id!="")id="showhidecontent${id}" #end style="display: none;" %)
 (((
 (((
-$context.macro.content
+$xcontext.macro.content
 )))
 )))
 )))
