@@ -190,20 +190,20 @@ Here is some hidden content that can become visible
     </property>
     <property>
       <code>require(['jquery'], function($) {
-    function onClick () {
-        var button = $(this),
-            content = button.parent().next(),
-            effect = button.attr('data-show-effect'),
-            data = button.data();
-        if($.inArray(effect,['toggle','fadeToggle','slideToggle']) == -1) effect = 'toggle';
-        data.showHideState = !(('showHideState' in data) ? data.showHideState : content.is(':visible'));
-        button.html(button.attr(data.showHideState ? 'data-hide-message' : 'data-show-message'));
-        content.stop()[effect](parseInt(button.attr('data-show-duration')));
-        return false;
-    }
-    $(document).ready(function() {
-        $('.showhidebutton').children('a').click(onClick);
-    });
+  function onClick () {
+    var button = $(this),
+      content = button.parent().next(),
+      effect = button.attr('data-show-effect'),
+      data = button.data();
+    if($.inArray(effect,['toggle','fadeToggle','slideToggle']) == -1) effect = 'toggle';
+    data.showHideState = !(('showHideState' in data) ? data.showHideState : content.is(':visible'));
+    button.html(button.attr(data.showHideState ? 'data-hide-message' : 'data-show-message'));
+    content.stop()[effect](parseInt(button.attr('data-show-duration')));
+    return false;
+  }
+  $(document).ready(function() {
+    $('.showhidebutton').children('a').on('click', onClick);
+  });
 });</code>
     </property>
     <property>
