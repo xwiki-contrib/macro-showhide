@@ -455,10 +455,10 @@ Here is some hidden content that can become visible
       <contentType>Optional</contentType>
     </property>
     <property>
-      <defaultCategory>content</defaultCategory>
+      <defaultCategory>Content</defaultCategory>
     </property>
     <property>
-      <description>Show Hide Macro</description>
+      <description>XWiki macro for simple show/hide of a content with some animations</description>
     </property>
     <property>
       <id>showhide</id>
