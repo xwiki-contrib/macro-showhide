@@ -1,6 +1,6 @@
 # ShowHide Macro
 
-* Project Lead: [Alex Cotiugă](http://www.xwiki.org/xwiki/bin/view/XWiki/acotiuga)
+* Project Lead: [Vincent Massol](http://www.xwiki.org/xwiki/bin/view/XWiki/VincentMassol)
 * [Documentation & Download](https://extensions.xwiki.org/xwiki/bin/view/Extension/Ajax%20and%20Show%20Hide%20Macro)
 * [Issue Tracker](https://jira.xwiki.org/browse/SHMACRO)
 * Communication: [Mailing List](http://dev.xwiki.org/xwiki/bin/view/Community/MailingLists), [IRC](http://dev.xwiki.org/xwiki/bin/view/Community/IRC)
