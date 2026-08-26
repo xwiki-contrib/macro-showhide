@@ -197,7 +197,7 @@ Here is some hidden content that can become visible
       data = button.data();
     if($.inArray(effect,['toggle','fadeToggle','slideToggle']) == -1) effect = 'toggle';
     data.showHideState = !(('showHideState' in data) ? data.showHideState : content.is(':visible'));
-    button.html(button.attr(data.showHideState ? 'data-hide-message' : 'data-show-message'));
+    button.text(button.attr(data.showHideState ? 'data-hide-message' : 'data-show-message'));
     content.stop()[effect](parseInt(button.attr('data-show-duration')));
     return false;
   }
@@ -433,7 +433,7 @@ Here is some hidden content that can become visible
 (% class="showhidebutton" %)
 (((
 {{html clean=false}}
-&lt;a href="javascript:void(0)" #if($id &amp;&amp; $id!="")id="showhidebuttontext${id}" #end data-show-duration="$effectduration" data-show-effect="$effect" data-show-message="$showmessage" data-hide-message="$hidemessage"&gt;$mparams.showmessage&lt;/a&gt;
+&lt;a href="javascript:void(0)" #if($id &amp;&amp; $id!="")id="showhidebuttontext${id}" #end data-show-duration="$effectduration" data-show-effect="$effect" data-show-message="$showmessage" data-hide-message="$hidemessage"&gt;$showmessage&lt;/a&gt;
 {{/html}}
 )))
 (% class="showhidecontent" #if($id &amp;&amp; $id!="")id="showhidecontent${id}" #end#if($xcontext.action != 'edit') style="display: none;"#end %)
